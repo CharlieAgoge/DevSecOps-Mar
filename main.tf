@@ -1,11 +1,11 @@
 provider "aws" {
   region = "eu-west-2" # London region
 }
-resource "aws_s3_bucket" "terraform_today_today" {
+resource "aws_s3_bucket" "terraform23" {
   bucket = "terraform-up-and-running-state-today-today"
 }
 resource "aws_s3_bucket" "terraform_" {
-  bucket = "terraform_"
+  bucket = "terraform23"
 }
 terraform {
   backend "s3" {
