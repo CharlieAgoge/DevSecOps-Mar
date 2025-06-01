@@ -4,7 +4,7 @@ provider "aws" {
 resource "aws_s3_bucket" "terraform23" {
   bucket = "terraform-up-and-running-state-today-today"
 }
-resource "aws_s3_bucket" "terraform_" {
+resource "aws_s3_bucket" "terraform23" {
   bucket = "terraform23"
 }
 terraform {
