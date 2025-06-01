@@ -4,6 +4,9 @@ provider "aws" {
 resource "aws_s3_bucket" "terraform_today_today" {
   bucket = "terraform-up-and-running-state-today-today"
 }
+resource "aws_s3_bucket" "terraform_" {
+  bucket = "terraform_"
+}
 terraform {
   backend "s3" {
     # Replace this with your bucket name!
