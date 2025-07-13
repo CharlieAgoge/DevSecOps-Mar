@@ -5,6 +5,7 @@ import pickle
 import jwt
 import urllib3
 from flask import Flask, request
+import json  # Added for safe deserialization
 
 # Flask application
 app = Flask(__name__)
@@ -63,7 +64,8 @@ def greet():
 
 # 8. **Insecure Deserialization**
 def insecure_deserialize(data):
-    return pickle.loads(data)
+    import json  # Import required for safe deserialization
+    return json.loads(data)
 
 # 9. **Using Components with Known Vulnerabilities**
 def use_vulnerable_library():
